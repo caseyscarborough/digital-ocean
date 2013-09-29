@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'digital_ocean/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "digital_ocean"
+  spec.name          = "digital-ocean"
   spec.version       = DigitalOcean::VERSION
   spec.authors       = ["Casey Scarborough"]
   spec.email         = ["caseyscarborough@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "A wrapper for Digital Ocean's API."
+  spec.summary       = "A simple and easy-to-use wrapper for interacting with Digital Ocean's API."
   spec.homepage      = ""
   spec.license       = "MIT"
 
