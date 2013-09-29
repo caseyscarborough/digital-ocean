@@ -1,24 +1,26 @@
 # DigitalOcean
 
-TODO: Write a gem description
+This gem is a simple and easy-to-use wrapper for Digital Ocean's API.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'digital_ocean'
+```ruby
+gem 'digital-ocean'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install digital_ocean
-
-## Usage
-
-TODO: Write usage instructions here
+```bash
+$ gem install digital_ocean
+```
 
 ## Contributing
 
