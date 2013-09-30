@@ -1,4 +1,4 @@
-# DigitalOcean
+# Digital Ocean API
 
 This gem is a simple and easy-to-use wrapper for Digital Ocean's API.
 
@@ -19,7 +19,7 @@ $ bundle install
 Or install it yourself as:
 
 ```bash
-$ gem install digital_ocean
+$ gem install digital-ocean
 ```
 
 ## Contributing
