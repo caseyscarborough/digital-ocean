@@ -1,5 +1,6 @@
-require "digital_ocean/version"
+require 'digital_ocean/version'
+require 'digital_ocean/default'
 
 module DigitalOcean
-  # Your code goes here...
+  
 end
