@@ -1,5 +1,6 @@
 require 'digital_ocean/client/droplets'
 require 'digital_ocean/client/regions'
+require 'digital_ocean/client/sizes'
 
 module DigitalOcean
   class Client
@@ -9,6 +10,7 @@ module DigitalOcean
 
     include DigitalOcean::Client::Droplets
     include DigitalOcean::Client::Regions
+    include DigitalOcean::Client::Sizes
 
     attr_accessor :client_id, :api_key
 

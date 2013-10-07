@@ -44,7 +44,7 @@ module DigitalOcean
       # @example
       #   client.new_droplet(
       #     :name        => 'test.example.com',
-      #     :size_id     => 3,
+      #     :size_id     => 63,
       #     :region_id   => 4,
       #     :ssh_key_ids => "ssh-key rsa e5ab78..,ssh-key rsa...",
       #     :private_networking => true
