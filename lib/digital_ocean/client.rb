@@ -1,4 +1,5 @@
 require 'digital_ocean/client/droplets'
+require 'digital_ocean/client/regions'
 
 module DigitalOcean
   class Client
@@ -7,6 +8,7 @@ module DigitalOcean
     base_uri Default::API_ENDPOINT
 
     include DigitalOcean::Client::Droplets
+    include DigitalOcean::Client::Regions
 
     attr_accessor :client_id, :api_key
 

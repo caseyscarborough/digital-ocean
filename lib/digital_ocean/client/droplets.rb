@@ -30,6 +30,8 @@ module DigitalOcean
       def droplet(id)
         get "/droplets/#{id}"
       end
+
+      
     end
 
   end
