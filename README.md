@@ -45,6 +45,55 @@ client.droplets
 # => #<Hashie::Mash droplets=[#<Hashie::Mash backups_active=false cre...
 ```
 
+__Retrieve a droplet by its ID__
+
+This method retrieves a single droplet by its ID.
+
+```ruby
+client.droplet(145822)
+```
+
+__Create a new droplet__
+
+This method creates a new droplet. It takes the following parameters:
+
+* `:name` _Required_, String, this is the name of the droplet - must be formatted by hostname rules.
+* `:size_id` _Required_, Numeric, this is the id of the size you would like the droplet created at.
+* `:image_id` _Required_, Numeric, this is the id of the image you would like the droplet created with.
+* `:region_id` _Required_, Numeric, this is the id of the region you would like your server in.
+* `:ssh_key_ids` _Optional_, Numeric CSV, comma separated list of ssh_key_ids that you would like to be added to the server.
+* `:private_networking` _Optional_, Boolean, enables a private network interface if the region supports private networking.
+
+```ruby
+client.new_droplet(
+  :name        => 'test.example.com',
+  :size_id     => 63,
+  :region_id   => 4,
+  :ssh_key_ids => "ssh-key rsa e5ab78..,ssh-key rsa...",
+  :private_networking => true
+)
+```
+
+### Regions
+
+__Retrieve a list of available regions__
+
+This method returns a list of regions that are available to create a new droplet in with info about each location.
+
+```ruby
+client.regions
+```
+
+### Sizes
+
+__Retrieve a list of available sizes__
+
+This method retrieves a list of available sizes for a new droplet along with information about each size.
+
+```ruby
+client.sizes
+```
+
 ## Contributing
 
 1. Fork it
