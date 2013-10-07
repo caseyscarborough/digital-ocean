@@ -1,8 +1,12 @@
+require 'digital_ocean/client/droplets'
+
 module DigitalOcean
   class Client
 
     include HTTParty
     base_uri Default::API_ENDPOINT
+
+    include DigitalOcean::Client::Droplets
 
     attr_accessor :client_id, :api_key
 
@@ -12,10 +16,16 @@ module DigitalOcean
         @api_key = options[:api_key]
       end
     end
+
     private
 
+      def get(url, params={})
+        response = self.class.get url, :query => params
+        Hashie::Mash.new response.parsed_response
+      end
+
       def auth_params
-        @client_id && @api_key ? { :client_id => @client_id } : { :api_key => @api_key }
+        { :client_id => self.client_id, :api_key => self.api_key } if @client_id && @api_key
       end
 
   end

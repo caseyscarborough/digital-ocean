@@ -16,8 +16,8 @@ module DigitalOcean
     private 
 
       def method_missing(name, *args, &block)
-        client.send(name, *args, &block)
+        DigitalOcean.client.send(name, *args, &block)
       end
-      
+
   end
 end
