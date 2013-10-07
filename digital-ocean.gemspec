@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["caseyscarborough@gmail.com"]
   spec.description   = "A wrapper for Digital Ocean's API."
   spec.summary       = "A simple and easy-to-use wrapper for interacting with Digital Ocean's API."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/caseyscarborough/digital-ocean"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
