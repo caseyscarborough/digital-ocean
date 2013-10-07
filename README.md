@@ -38,7 +38,7 @@ client = DigitalOcean.client(
 
 __Retrieve a list of your droplets__
 
-This method returns an array of droplets each with the following attributes: _backups\_active, created\_at, id, image\_id, ip\_address, locked, name, private\_ip\_address, region\_id, size\_id, status_
+This method returns an array of droplets each with the following attributes: backups_active, created_at, id, image_id, ip_address, locked, name, private_ip_address, region_id, size_id, status
 
 ```ruby
 client.droplets
