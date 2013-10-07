@@ -20,7 +20,7 @@ module DigitalOcean
     private
 
       def get(url, params={})
-        response = self.class.get url, :query => params
+        response = self.class.get url, :query => params.merge(auth_params)
         Hashie::Mash.new response.parsed_response
       end
 
